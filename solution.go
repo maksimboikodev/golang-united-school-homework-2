@@ -17,6 +17,7 @@ const (
 	SidesTriangle = 3
 	SidesSquare   = 4
 	SidesCircle   = 0
+	Pi            = 3.1415926
 )
 
 func CalcSquare(sideLen float64, sidesNum MyType) float64 {
@@ -25,7 +26,7 @@ func CalcSquare(sideLen float64, sidesNum MyType) float64 {
 	} else if sidesNum == 3 {
 		return ((math.Pow(sideLen, 2) * math.Sqrt(3)) / 4)
 	} else if sidesNum == 0 {
-		return (3.1415 * math.Pow(sideLen, 2))
+		return (math.Pi * math.Pow(sideLen, 2))
 	} else {
 		return 0
 	}
